@@ -1,5 +1,4 @@
-## Task 1: Implementthe Node and List Class Structure
-# Node Class
+## Task 1: Implement the Node and List Class Structure
 class Node:
     def __init__(self, data):
         self.data = data
@@ -59,7 +58,6 @@ class LinkedList:
     def get_size(self):
         print(f"Current size: {self.size}")
         return self.size
-
     # Prepend element at beginning
     def prepend(self, element):
         new_node = Node(element)
@@ -79,11 +77,7 @@ class LinkedList:
             result.append(str(current.data))
             current = current.next
         print("Print Linked list:[" + " ".join(result) + "]")
-
-
-# --------------------------
-# Example Usage to get [10 10 5]
-# --------------------------
+        
 my_LinkedList = LinkedList()
 
 my_LinkedList.append(5)       # Add 5 at the end
